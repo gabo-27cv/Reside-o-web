@@ -1,0 +1,80 @@
+/* RESET GENERAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ESTILOS GENERALES */
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: white;
+    color: black;
+    line-height: 1.6;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* TÍTULO PRINCIPAL */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* TEXTO INTRODUCTORIO */
+.intro {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* ===== FLEXBOX PARA LA LISTA DE ENLACES ===== */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding-left: 1.5rem;
+}
+
+/* ELEMENTOS DE LA LISTA */
+.links li {
+    list-style: disc;
+}
+
+/* ENLACES */
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* ENLACES VISITADOS */
+a:visited {
+    color: purple;
+}
+
+/* ===== DISEÑO PARA TABLET ===== */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .container {
+        margin: 1.5rem auto;
+    }
+}
+
+/* ===== DISEÑO PARA MÓVIL ===== */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .container {
+        margin: 1rem auto;
+    }
+}
